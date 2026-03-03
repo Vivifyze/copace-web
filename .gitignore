@@ -1,0 +1,15 @@
+# deps
+node_modules
+
+# build
+dist
+
+# env
+.env
+.env.local
+.env.*.local
+
+# editor
+.DS_Store
+.vscode
+*.swp
