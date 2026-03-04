@@ -15,8 +15,7 @@ export default function Hardship() {
     setFormState('submitting')
 
     try {
-      // Replace with your actual form submission endpoint (e.g. Firebase Function, Formspree, etc.)
-      const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const res = await fetch('https://us-central1-copace-2a945.cloudfunctions.net/hardshipRequest', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify({ email, reason }),
